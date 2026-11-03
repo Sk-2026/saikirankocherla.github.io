@@ -210,86 +210,28 @@ body{
 a { color: var(--accent); }
 p, li { word-wrap: break-word; }
 
-/* Research & Project Gallery */
+/*Research Gallert*/
+/* LinkedIn Embedded Video */
 
-.research-gallery {
-  padding-top: 60px;
-  padding-bottom: 60px;
+.linkedin-video-container {
+  position: relative;
+  width: 100%;
+  margin: 20px 0;
+  overflow: hidden;
+  border-radius: 12px;
+  background: #000;
 }
 
-.research-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 24px;
-  margin-top: 30px;
-}
-
-.research-card {
-  background: var(--card, #ffffff);
-  border: 1px solid var(--border, #e2e8f0);
-  border-radius: 14px;
-  padding: 28px;
-  transition: transform 0.25s ease,
-              box-shadow 0.25s ease;
-}
-
-.research-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
-}
-
-.research-category {
-  display: inline-block;
-  font-size: 0.82rem;
-  font-weight: 600;
-  color: #2563eb;
-  margin-bottom: 14px;
-}
-
-.research-card h3 {
-  font-size: 1.3rem;
-  line-height: 1.5;
-  margin-bottom: 15px;
-}
-
-.research-card p {
-  font-size: 0.95rem;
-  line-height: 1.8;
-  color: var(--muted, #64748b);
-  margin-bottom: 20px;
-}
-
-.research-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  margin-bottom: 24px;
-}
-
-.research-tags span {
-  font-size: 0.78rem;
-  padding: 6px 10px;
-  border-radius: 6px;
-  background: #eff6ff;
-  color: #1d4ed8;
-}
-
-.research-link {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  font-weight: 600;
-  color: var(--accent, #2563eb);
-  text-decoration: none;
-  transition: gap 0.2s ease;
-}
-
-.research-link:hover {
-  gap: 13px;
+.linkedin-video-container iframe {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  border: none;
+  border-radius: 12px;
 }
 
 @media (max-width: 600px) {
-  .research-card {
-    padding: 20px;
+  .linkedin-video-container iframe {
+    height: 450px;
   }
 }
